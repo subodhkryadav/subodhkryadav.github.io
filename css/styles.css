@@ -355,84 +355,119 @@ footer {
 }
 
 
-/* Contact Section */
-.contact {
-  background: #415a77;
-  padding: 90px 20px;
-  display: flex;
-  justify-content: center;
+
+/* CONTACT SECTION – ISOLATED */
+.contact-section {
+  background: linear-gradient(135deg, #6a4cff, #7b5cff);
+  padding: 100px 30px;
 }
 
-.contact-box {
-  width: 100%;
-  max-width: 600px;
-  text-align: center;
-  color: #fff;
-}
-
-.contact-heading {
-  font-size: 2.2rem;
-  margin-bottom: 8px;
-}
-
-.contact-heading i {
-  color: #ff5d8f;
-  margin-right: 8px;
-}
-
-.contact-line {
-  display: block;
-  width: 70px;
-  height: 3px;
-  background: #1e90ff;
-  margin: 12px auto 40px;
-  border-radius: 2px;
-}
-
-.contact-item {
-  display: flex;
+.contact-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
   align-items: center;
-  gap: 15px;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 18px 20px;
-  border-radius: 12px;
-  margin-bottom: 18px;
-  transition: all 0.3s ease;
 }
 
-.contact-item i {
-  font-size: 1.5rem;
-  color: #ff5d8f;
+/* LEFT */
+.contact-left {
+  color: #1e1e2f;
+  background: #eef1f7;
+  padding: 60px;
+  border-radius: 25px;
 }
 
-.contact-item p {
-  margin: 0;
-  text-align: left;
+.contact-tag {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #7b5cff;
+  font-weight: 600;
 }
 
-.contact-item span {
-  display: block;
-  font-size: 0.85rem;
-  color: #d9d9d9;
+.contact-left h2 {
+  font-size: 2.5rem;
+  margin: 15px 0;
+  line-height: 1.2;
 }
 
-.contact-item a {
-  color: #ffffff;
+.contact-left p {
   font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: #7b5cff;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.contact-socials a:hover {
+  transform: translateY(-4px);
+  background: #5a3df0;
+}
+
+/* RIGHT CARD */
+.contact-card {
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 25px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+.info-row {
+  margin-bottom: 22px;
+}
+
+.info-row span {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.info-row a {
+  font-size: 1rem;
+  color: #333;
   text-decoration: none;
+  font-weight: 500;
 }
 
-.contact-item:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.15);
+.contact-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: #7b5cff;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-/* Footer */
-.footer {
-  background: #0d1b2a;
-  text-align: center;
-  padding: 15px;
-  color: #aaa;
-  font-size: 0.9rem;
+.contact-btn:hover {
+  background: #5a3df0;
 }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-left {
+    text-align: center;
+  }
+}
+
 
