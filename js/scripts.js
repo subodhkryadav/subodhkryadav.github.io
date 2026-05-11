@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { icon: 'fas fa-chart-bar', name: 'Matplotlib/Seaborn' }
     ],
     projects: [
-      { title: 'Machine Learning Portfolio', desc: 'Multiple ML projects using Python, Pandas, Scikit-learn.', img: 'assets/img/portfolio/thumbnails/machine_learning.png', link: 'https://github.com/subodhkryadav' },
+      { title: 'Machine Learning Portfolio', desc: 'Multiple ML projects using Python, Pandas, Scikit-learn.', img: 'assets/img/portfolio/thumbnails/machine_learning.png', link: 'https://github.com/subodhkryadav/machine-learning-portfolio' },
       { title: 'Pima Diabetes Prediction', desc: 'Healthcare dataset – classification model to predict diabetes.', img: 'assets/img/portfolio/thumbnails/pima.png', link: 'https://github.com/subodhkryadav/pima-diabetes-prediction-ml' },
       { title: 'Student Placement Prediction App', desc: 'Logistic Regression + Flask web app.', img: 'assets/img/portfolio/thumbnails/placement.png', link: 'https://github.com/subodhkryadav/Student-Placement-Prediction-App' },
       { title: 'Student Performance Prediction', desc: 'ML app to predict academic performance.', img: 'assets/img/portfolio/thumbnails/student_performance.png', link: 'https://github.com/subodhkryadav/student_performance_app' }
