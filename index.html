@@ -2,435 +2,192 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Subodh Kumar Yadav | Portfolio</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-
-  <!-- CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Subodh Kumar Yadav | Data Science & Analytics</title>
   <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #121216;
-      color: #fff;
-      padding-top: 70px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    /* Navbar */
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #1e1e28;
-      padding: 12px 0;
-      z-index: 999;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-    }
-
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1100px;
-      margin: auto;
-      padding: 0 20px;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #ff4d5a;
-    }
-
-    .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 24px;
-    }
-
-    .nav-links li a {
-      text-decoration: none;
-      color: white;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    .nav-links li a:hover {
-      color: #ff4d5a;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .hero-content .profile-img {
-      width: 150px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
-    .hero-content h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .hero-content span {
-      color: #ff4d5a;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 26px;
-      color: #ff4d5a;
-      margin-bottom: 20px;
-    }
-
-    /* Education */
-    .education-section {
-      padding: 40px 0;
-    }
-
-    .edu-card {
-      background: #1e1e28;
-      margin-bottom: 15px;
-      padding: 20px;
-      border-radius: 10px;
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-
-    .edu-icon {
-      font-size: 24px;
-      color: #ff4d5a;
-    }
-
-    .edu-content h3 {
-      margin-bottom: 5px;
-    }
-
-    .year {
-      color: #ff4d5a;
-      font-weight: 600;
-    }
-
-    /* Skills */
-    .skills-section {
-      padding: 40px 0;
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 20px;
-    }
-
-    .skill-item {
-      background: #1e1e28;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-    }
-
-    .skill-item i {
-      font-size: 24px;
-      color: #ff4d5a;
-      margin-bottom: 10px;
-    }
-
-    /* Projects */
-    .projects {
-      padding: 40px 0;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .project-card {
-      background: #1e1e28;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    .project-card h3 {
-      margin: 10px 0;
-    }
-
-    .project-card a {
-      color: #ff4d5a;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    /* Contact */
-    .contact {
-      padding: 40px 0;
-    }
-
-    .contact a {
-      color: #ff4d5a;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #1e1e28;
-      margin-top: 20px;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <h1 class="logo">Subodh</h1>
-      <ul class="nav-links">
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <nav class="navbar" id="top">
+    <div class="nav-container">
+      <a href="#profile" class="logo">Subodh<span>.</span></a>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link" href="#profile">Profile</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#role" data-role="ds">Data Science</a></li>
+        <li><a class="nav-link" href="#role" data-role="da">Data Analytics</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Header / Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <img src="assets\img\portfolio\thumbnails\profile.jpg" alt="Profile" class="profile-img" />
-      <h1>Hi, I'm <span>Subodh Kumar Yadav</span></h1>
-      <p>Aspiring Data Scientist | Python Developer | Data Analyst</p>
-      <a href="assets/Subodh_Kumar_Yadav_Resume.pdf" target="_blank" class="resume-btn">📄 View Resume</a>
+  <section id="profile" class="section hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow">🚀 Data Science & Analytics</p>
+        <h1 class="hero-title">
+          <span class="hero-title-main">Subodh Kumar</span>
+          <span class="hero-title-accent">Yadav</span>
+        </h1>
+        <div class="typed-container">
+          <span class="typed-text" aria-live="polite"></span>
+        </div>
+        <p class="hero-bio">
+          Data Science & Analytics specialist and Python Developer. I build practical ML solutions, craft insight-rich dashboards, and turn raw data into confident decisions. Open to impactful roles.
+        </p>
+        <div class="resume-buttons">
+          <a class="btn btn-secondary" id="ds-resume-btn" data-resume="ds" href="assets/Data_Science_Resume.pdf" target="_blank" rel="noopener">
+            <i class="fas fa-chart-line"></i> Data Science Resume
+          </a>
+          <a class="btn btn-secondary" id="da-resume-btn" data-resume="da" href="assets/Data_Analytics_Resume.pdf" target="_blank" rel="noopener">
+            <i class="fas fa-chart-simple"></i> Data Analytics Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="profile-card">
+          <img src="assets/img/portfolio/thumbnails/profile.jpg" alt="Portrait of Subodh Kumar Yadav" />
+          <div class="profile-glow"></div>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <!-- Education Section -->
-  <section id="education" class="education-section">
+  <section id="education" class="section education-section">
     <div class="container">
       <h2 class="section-title">🎓 Education</h2>
-
-      <div class="edu-card">
-        <div class="edu-icon"><i class="fas fa-school"></i></div>
-        <div class="edu-content">
-          <h3>Pandit Subansh Lal High School, Sankorth</h3>
-          <p>Bihar School Examination Board, Patna</p>
-          <p class="year">2019-2021 - 88.6%</p>
-        </div>
-      </div>
-
-      <div class="edu-card">
-        <div class="edu-icon"><i class="fas fa-university"></i></div>
-        <div class="edu-content">
-          <h3>M.L.S.M College, Darbhanga</h3>
-          <p>Bihar School Examination Board, Patna</p>
-          <p class="year">2021-2023 - 70.6%</p>
-        </div>
-      </div>
-
-      <div class="edu-card">
-        <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
-        <div class="edu-content">
-          <h3>B.Tech in Computer Science</h3>
-          <p>Jagannath University, Jaipur</p>
-          <p class="year">2023 - Present</p>
-        </div>
+      <div class="card-grid grid-3">
+        <article class="glass-card">
+          <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+          <div>
+            <h3>B.Tech in Computer Science</h3>
+            <p>Jagannath University, Jaipur</p>
+            <span class="card-meta">2023–Present</span>
+          </div>
+        </article>
+        <article class="glass-card">
+          <div class="card-icon"><i class="fas fa-university"></i></div>
+          <div>
+            <h3>Intermediate (BSEB)</h3>
+            <p>M.L.S.M College, Darbhanga</p>
+            <span class="card-meta">2021–2023, 70.6%</span>
+          </div>
+        </article>
+        <article class="glass-card">
+          <div class="card-icon"><i class="fas fa-school"></i></div>
+          <div>
+            <h3>Matriculation (BSEB)</h3>
+            <p>Pandit Subansh Lal High School, Sankorth</p>
+            <span class="card-meta">2019–2021, 88.6%</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills-section">
+  <section id="experience" class="section experience-section">
     <div class="container">
-      <h2 class="section-title">🛠️ Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-item"><i class="fas fa-code"></i><p>Python</p></div>
-        <div class="skill-item"><i class="fas fa-code"></i><p>Excel</p></div>
-        <div class="skill-item"><i class="fab fa-java"></i><p>Statistical Methods</p></div>
-        <div class="skill-item"><i class="fas fa-database"></i><p>MySQL</p></div>
-        <div class="skill-item"><i class="fas fa-brain"></i><p>ML</p></div>
-        <div class="skill-item"><i class="fas fa-chart-line"></i><p>Data Analysis</p></div>
-        <div class="skill-item"><i class="fas fa-chart-bar"></i><p>Visualization</p></div>
-        <div class="skill-item"><i class="fas fa-code-branch"></i><p>Git / GitHub</p></div>
-        <div class="skill-item"><i class="fas fa-globe"></i><p>HTML</p></div>
-        <div class="skill-item"><i class="fas fa-fire"></i><p>Pwer BI</p></div>
-        <div class="skill-item"><i class="fas fa-fire"></i><p>Tebleau</p></div>
-        <div class="skill-item"><i class="fas fa-fire"></i><p>Flask</p></div>
+      <h2 class="section-title">💼 Experience / Internship</h2>
+      <div class="card-grid grid-2">
+        <article class="glass-card">
+          <div class="card-icon"><i class="fas fa-building"></i></div>
+          <div>
+            <h3>Knows Innovations Pvt Ltd <span>Data Science Intern</span></h3>
+            <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Bengaluru, Jun 2025 – Jul 2025</p>
+            <p>Weather Forecasting & Zomato Recommendation ML projects – model building, evaluation, and Flask deployment.</p>
+          </div>
+        </article>
+        <article class="glass-card">
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <div>
+            <h3>Learn and Build <span>Data Analytics Intern</span></h3>
+            <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Remote, Jul 2024 – Aug 2024</p>
+            <p>Analytics on real-world datasets using Python, Excel, Power BI – dashboards and statistical summaries.</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-<section id="projects" class="projects">
+  <section id="role" class="section role-section">
     <div class="container">
-        <h2 class="section-title center">💼 Projects</h2>
-        <div class="project-grid">
-
-            <!-- Project 1: Customer Churn Analysis & Prediction -->
-            <div class="project-card">
-                <!-- Change this image path if you have a specific thumbnail for this project -->
-                <img src="assets/img/portfolio/thumbnails/churndata.png" alt="Customer Churn Prediction">
-                <h3>🧾 Customer Churn Analysis & Prediction</h3>
-                <p>Analyzed customer behavior and developed a machine learning model to predict churn, helping businesses with customer retention strategies.</p>
-                <a href="https://github.com/subodhkryadav/Customer-Churn-Analysis-Prediction" target="_blank">🔗 GitHub</a>
-            </div>
-
-            <!-- Project 2: Student Placement Prediction App -->
-            <div class="project-card">
-                <!-- Change this image path if you have a specific thumbnail for this project -->
-                <img src="assets/img/portfolio/thumbnails/placement.png" alt="Student Placement Prediction App">
-                <h3>🧾 Student Placement Prediction App</h3>
-                <p>A user-friendly Flask web application utilizing a machine learning model to predict student job placement status based on key performance metrics.</p>
-                <a href="https://github.com/subodhkryadav/Student-Placement-Prediction-App" target="_blank">🔗 GitHub</a>
-            </div>
-
-            <!-- Project 3: Student Performance Analysis App -->
-            <div class="project-card">
-                <!-- Change this image path if you have a specific thumbnail for this project -->
-                <img src="assets/img/portfolio/thumbnails/st.png" alt="Student Performance Analysis">
-                <h3>🧾 Student Performance Analysis</h3>
-                <p>Interactive web application (likely using Flask/Streamlit) for comprehensive data analysis and visualization of student performance metrics and factors.</p>
-                <a href="https://github.com/subodhkryadav/student_performance_app" target="_blank">🔗 GitHub</a>
-            </div>
-            
-            <!-- Project 4: Bangalore Restaurant Recommender (Retained) -->
-            <div class="project-card">
-                <img src="assets\img\portfolio\thumbnails\resturant.jpg" alt="Restaurant Recommender">
-                <h3>🧾 Bangalore Restaurant Recommender</h3>
-                <p>Recommender system using cosine similarity. Flask web interface for a smooth user experience.</p>
-                <a href="https://github.com/subodhkryadav/bangalore-restaurant-recommender" target="_blank">🔗 GitHub</a>
-            </div>
-            
+      <div class="role-header glass-card">
+        <div>
+          <h2 class="section-title">Choose Your Track</h2>
+          <p class="role-subtitle">Switch between Data Analytics and Data Science to explore tailored skills and projects.</p>
         </div>
+        <div class="role-switch">
+          <button class="role-tab" data-role="da" type="button">
+            <i class="fas fa-chart-pie"></i> Data Analytics
+          </button>
+          <button class="role-tab" data-role="ds" type="button">
+            <i class="fas fa-brain"></i> Data Science
+          </button>
+        </div>
+      </div>
+      <div id="role-content" class="role-content"></div>
     </div>
-</section>
+  </section>
 
-
- <!-- Contact Section -->
-<!-- CONTACT SECTION -->
-<section id="contact" class="contact-section">
-  <div class="contact-wrapper">
-
-    <!-- LEFT SIDE -->
-    <div class="contact-left">
-      <span class="contact-tag">CONTACT</span>
-
-      <h2>
-        Let’s make<br>
-        something<br>
-        great together
-      </h2>
-
-      <p>
-        I’m open to Data Science / Data Analyst opportunities,
-        internships, and collaborations. Feel free to reach out anytime.
-      </p>
-
-      <div class="contact-socials">
-        <a href="mailto:subodhkry933@gmail.com" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="tel:+919708795935" title="Phone">
-          <i class="fas fa-phone"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/subodh-kumar-yadav-522828293/" target="_blank" title="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/subodhkryadav" target="_blank" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div class="contact-left glass-card">
+        <h2 class="section-title contact-title">📬 Let's connect</h2>
+        <h3>Turn data into decisions together</h3>
+        <p>Open for Data Science / Analytics roles, freelance, or collaborations. I reply within 24h.</p>
+        <div class="contact-socials">
+          <a href="mailto:subodhkumary933@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+919708795935" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
+          <a href="https://www.linkedin.com/in/subodh-kumar-yadav-522828293/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/subodhkryadav" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://leetcode.com/u/subodhkumaryadav/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+          <a href="https://www.geeksforgeeks.org/profile/subodhku8r7c?tab=activity" target="_blank" rel="noopener" aria-label="GeeksforGeeks"><i class="fas fa-book"></i></a>
+        </div>
+      </div>
+      <div class="contact-form glass-card">
+        <form action="https://formsubmit.co/subodhkumary933@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_subject" value="New message from Portfolio" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input id="first-name" type="text" name="First Name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input id="last-name" type="text" name="Last Name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="Email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" name="Subject" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            Send message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
       </div>
     </div>
+  </section>
 
-    <!-- RIGHT SIDE FORM -->
-    <div class="contact-form-card">
-      <form action="https://formsubmit.co/subodhkry933@gmail.com" method="POST">
+  <footer class="footer">
+    <p>© 2026 Subodh Kumar Yadav — Dual-track for Data Science & Analytics</p>
+  </footer>
 
-        <!-- hidden settings -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="New Portfolio Contact Message">
-
-        <div class="form-row">
-          <div class="form-group">
-            <label>First Name</label>
-            <input type="text" name="First Name" placeholder="First Name" required>
-          </div>
-
-          <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" name="Last Name" placeholder="Last Name" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" name="Email" placeholder="Email Address" required>
-        </div>
-
-        <div class="form-group">
-          <label>Subject</label>
-          <input type="text" name="Subject" placeholder="Subject">
-        </div>
-
-        <div class="form-group">
-          <label>Your Message</label>
-          <textarea name="Message" rows="4" placeholder="Your Message" required></textarea>
-        </div>
-
-        <button type="submit" class="submit-btn">
-          Send Message
-        </button>
-
-      </form>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- Footer -->
-<footer class="footer">
-  <p>© 2026 Subodh Kumar Yadav ❤️. All rights reserved.</p>
-</footer>
-
-
-
-
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>
