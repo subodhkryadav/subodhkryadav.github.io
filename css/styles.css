@@ -593,6 +593,21 @@ img {
   background: linear-gradient(160deg, rgba(108, 99, 255, 0.18), rgba(20, 20, 32, 0.75));
 }
 
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  color: #d6d4ff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.contact-email:hover {
+  color: #ffffff;
+}
+
 .contact-socials {
   display: flex;
   gap: 0.9rem;
